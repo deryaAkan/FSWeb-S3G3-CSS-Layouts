@@ -1,0 +1,130 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    background-color: hsl(28.09deg 67% 82.08%);
+    border-radius: 10px;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+a:hover {
+    background-color: hsl(0, 0%, 67%);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+     transform: scale(1.1); 
+     transition-duration: 0.5s;
+}
+
+main {
+    display: flex;
+    width: 60vw;
+    height: 45vw;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+    background-image: url(https://www.curatedgrey.com/cdn/shop/products/product-image-1557123141_940x.jpg?v=1656663782);
+    background-size: 100% auto;
+    border-radius: 15px;
+}
+
+main a {
+    display: flex;
+    margin: auto;
+    width: 100px;
+    background-color: hsl(28.09deg 67% 82.08%);
+    border-radius: 10px;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+main h1 {
+    margin: auto;
+    text-shadow: 4px 4px hsl(28.09deg 67% 82.08%);
+}
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 25vw;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.project-gallery img:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+     transform: scale(1.1); 
+     transition-duration: 0.5s;
+   }
+
+.project-gallery div {
+    width: 25%;
+    padding: 20px;
+}
+
+.project-gallery div p {
+    padding-top: 5%;
+    text-align: center;
+    margin: auto;
+}
+
+footer {
+    padding: 5% 0;
+    background-color: rgb(213, 213, 213);
+
+}
+
+footer a {
+    background-color: hsl(28.09deg 67% 82.08%);
+    border-radius: 10px;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    width: 90px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 350px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav a {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+    }
+
+    main {
+        width: 90vw;
+        height: 67.5vw;
+       
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 200%;
+    }
+}
